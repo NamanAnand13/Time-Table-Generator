@@ -1,21 +1,26 @@
 package scheduler;
 
+import java.util.ArrayList;
+
 public class Teacher {
     private int id;
     private String name;
     private String subject;
-    private int assigned;  // Indicates if the teacher is assigned to a subject
+    private ArrayList<String> subjects;
+    private int assigned; // Indicates if the teacher is assigned to a subject
 
     // Constructor
     public Teacher() {
         // Default constructor
+        subjects = new ArrayList<>();
     }
 
     public Teacher(int id, String name, String subject) {
         this.id = id;
         this.name = name;
         this.subject = subject;
-        this.assigned = 0;  // Default value for not assigned
+        this.assigned = 0; // Default value for not assigned
+        subjects = new ArrayList<>();
     }
 
     // Getter and Setter for id
@@ -52,6 +57,14 @@ public class Teacher {
 
     public void setAssigned(int assigned) {
         this.assigned = assigned;
+    }
+
+    public void addSubject(String subject) {
+        subjects.add(subject);
+    }
+
+    public ArrayList<String> getSubjects() {
+        return subjects;
     }
 
     @Override

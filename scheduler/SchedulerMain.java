@@ -7,7 +7,8 @@ public class SchedulerMain {
     /*
      * Time Table scheduling is an NP-hard problem which can best be solved
      * using Genetic Algorithms (of Artificial Intelligence).
-     * Concepts used here are permutation encoding, elitism, roulette wheel selection,
+     * Concepts used here are permutation encoding, elitism, roulette wheel
+     * selection,
      * single-point crossover, and swap mutation.
      */
 
@@ -15,7 +16,7 @@ public class SchedulerMain {
     private List<Chromosome> newList;
     private double firstListFitness;
     private double newListFitness;
-    private int populationSize = 1000;
+    private int populationSize = 250;
     private int maxGenerations = 100;
 
     public static Chromosome finalSon;
@@ -47,7 +48,8 @@ public class SchedulerMain {
 
         int noGenerations = 0;
 
-        // Loop through max number of generations or until a suitable chromosome is found
+        // Loop through max number of generations or until a suitable chromosome is
+        // found
         while (noGenerations < maxGenerations) {
             newList = new ArrayList<>();
             newListFitness = 0;
@@ -85,10 +87,14 @@ public class SchedulerMain {
 
             // If a chromosome with fitness 1 is found
             if (newList.size() < populationSize) {
-                System.out.println("****************************************************************************************");
-                System.out.println("\n\nSuitable Timetable has been generated in the " + newList.size() + "th Chromosome of " + (noGenerations + 2) + " generation with fitness 1.");
+                System.out.println(
+                        "****************************************************************************************");
+                System.out.println("\n\nSuitable Timetable has been generated in the " + newList.size()
+                        + "th Chromosome of " + (noGenerations + 2) + " generation with fitness 1.");
                 System.out.println("\nGenerated Timetable is:");
                 son.printTimeTable();
+                son.printTeacherTimeTable();
+                son.printClassroomTimeTable();
                 finalSon = son;
                 break;
             }
@@ -97,7 +103,8 @@ public class SchedulerMain {
             firstList = newList;
             Collections.sort(newList);
             Collections.sort(firstList);
-            System.out.println("**************************     Generation " + (noGenerations + 2) + "     ********************************************\n");
+            System.out.println("**************************     Generation " + (noGenerations + 2)
+                    + "     ********************************************\n");
             printGeneration(newList);
             noGenerations++;
         }
@@ -128,7 +135,8 @@ public class SchedulerMain {
             newFitness = c.getFitness();
 
             attempts++;
-            if (attempts >= 500000) break;  // Avoid infinite loop
+            if (attempts >= 50000)
+                break; // Avoid infinite loop
         }
     }
 
@@ -169,16 +177,29 @@ public class SchedulerMain {
         }
 
         if (list.size() > (populationSize / 10)) {
-            System.out.println("Chromosome no. " + (populationSize / 10 + 1) + " : " + list.get(populationSize / 10 + 1).getFitness() + "\n");
+            System.out.println("Chromosome no. " + (populationSize / 10 + 1) + " : "
+                    + list.get(populationSize / 10 + 1).getFitness() + "\n");
         }
         if (list.size() > (populationSize / 5)) {
-            System.out.println("Chromosome no. " + (populationSize / 5 + 1) + " : " + list.get(populationSize / 5 + 1).getFitness() + "\n");
+            System.out.println("Chromosome no. " + (populationSize / 5 + 1) + " : "
+                    + list.get(populationSize / 5 + 1).getFitness() + "\n");
+        }
+
+        if (list.size() > (populationSize / 2)) {
+            System.out.println("Chromosome no. " + (populationSize / 2 + 1) + " : "
+                    + list.get(populationSize / 2 + 1).getFitness() + "\n");
+        }
+
+        if (list.size() == (populationSize)) {
+            System.out.println("Chromosome no. " + (populationSize+1) + " : "
+                    + list.get(populationSize-1).getFitness() + "\n");
         }
 
         System.out.println("Most fit chromosome from this generation has fitness = " + list.get(0).getFitness() + "\n");
     }
 
-    // Selecting from best chromosomes only (alternative to roulette wheel selection)
+    // Selecting from best chromosomes only (alternative to roulette wheel
+    // selection)
     public Chromosome selectParentBest(List<Chromosome> list) {
         int randomIndex = new Random().nextInt(100);
         return list.get(randomIndex).deepClone();

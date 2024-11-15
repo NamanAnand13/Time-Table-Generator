@@ -23,7 +23,7 @@ public class Utility {
         // Print teachers and their assigned subjects
         for (Teacher teacher : InputData.getTeachers()) {
             System.out.println("Teacher ID: " + teacher.getId() + " Name: " + teacher.getName() + 
-                               " Subject: " + teacher.getSubject() + 
+                               " Subject: " + teacher.getSubjects() + 
                                " No. of Assignments: " + teacher.getAssigned());
         }
     }
@@ -40,7 +40,7 @@ public class Utility {
             Slot slot = TimeTable.getSlot(i);
             if (slot != null) {
                 System.out.println(i + " - " + slot.getStudentGroup().getName() + " " + 
-                                   slot.getSubject() + " Teacher ID: " + slot.getTeacherId());
+                                   slot.getSubject() + " Teacher ID: " + slot.getTeacherId() + " Classroom : " + slot.getClassroom());
             } else {
                 System.out.println(i + " - Free Period");
             }

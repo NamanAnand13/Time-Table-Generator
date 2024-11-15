@@ -1,20 +1,71 @@
 studentgroups
-CSE(Ist-Year) AC-1101 5 ME-1111 7 EVS-1101 7 AM-1101 3 PC-1101 5
-ECE(Ist-Year) AP-1101 7 ME-1111 4 EVS-1101 3 AM-1101 8 PC-1101 6
-ECL(Ist-Year) AP-1101 5 AC-1101 6 ME-1111 4 AM-1101 5 PC-1101 5
-CIVIL(Ist-Year) AP-1101 5 AC-1101 8 ME-1111 6 EVS-1101 3 PC-1101 5
-META(Ist-Year) AP-1101 8 AC-1101 4 ME-1111 3 EVS-1101 3 AM-1101 5
+ECE-AIML(SY-A1) DT 5 VK402 ICA 3 VK402 COS 3 VK402 MA 3 VK402 OOPS 3 VK402 DS 2 VK402 SSMMSC 3 VK402 ICA(L) 2 VK-304 COS(L) 2 VK-308 MA(L) 2 VK-207A OOPS(L) 2 JN-306B DS(L) 2 JN-306A SA(L) 2 VK303
+ECE-AIML(SY-A2) DT 5 VK403 ICA 3 VK403 COS 3 VK403 MA 3 VK403 OOPS 3 VK403 DS 2 VK403 SSMMSC 3 VK403 ICA(L) 2 VK-304 COS(L) 2 VK-308 MA(L) 2 VK-207A OOPS(L) 2 JN-306B DS(L) 2 JN-306A SA(L) 2 VK303
+ECE-CORE(SY-B) DT 5 VK405 ICA 3 VK405 COS 3 VK405 MA 3 VK405 JAVA 2 VK405 PCM 2 VK405 SSMMSC 3 VK405 ICA(L) 2 VK-304 COS(L) 2 VK-308 MA(L) 2 VK-207A JAVA(L) 2 JN-306A PCM(L) 2 JN-008 SA(L) 2 VK303
+ECE-CORE(SY-C) DT 5 VK402 ICA 3 VK402 COS 3 VK403 MA 3 VK403 JAVA 2 VK405 PCM 2 VK405 SSMMSC 3 VK405 ICA(L) 2 VK-304 COS(L) 2 VK-308 MA(L) 2 VK-207A JAVA(L) 2 JN-306A PCM(L) 2 JN-008 SA(L) 2 VK303
+EEE DMBS 4 JN106 DSA 3 JN106 EM-II 3 JN106 PSP 3 JN106 RES 2 JN106 OOPS 2 JN106 SSMMSC 3 JN106 DSA(L) 2 JN-005 EM-II(L) 2 JN-007B PSP(L) 2 JN-008 RES(L) 2 JN-009 OOPS(L) 2 JN-110
 teachers
-O.N.Singh AP-1101
-K.P.Sinha AP-1101
-KumarUtkarsh AM-1101
-A.Gupta AM-1101
-AKT AC-1101
-MAJ AC-1101
-Panda PC-1101
-d PC-1101
-Tyagi EVS-1101
-e EVS-1101
-SKS ME-1111
-f ME-1111
+Dr.R.Sandu DMBS
+Mrs.S.R.Danve DSA
+Mrs.S.R.Danve DSA(L)
+Dr.M.R.Kowdiki DSA(L)
+Mrs.M.A.SalWadkar EM-II
+Mrs.M.A.SalWadkar EM-II(L)
+Dr.N.M.Lokhande PSP
+Dr.N.M.Lokhande PSP(L)
+Mrs.M.M.Wani PSP(L)
+Dr.S.R.Yeolakar RES
+Dr.S.R.Yeolakar RES(L)
+Mrs.M.M.Wani RES(L)
+Dr.Rupal.Shroff DT
+Dr.G.Birajdar DT
+Dr.M.K.Pal DT
+Dr.P.P.Gundewar ICA
+Dr.T.S.Chaware ICA
+Dr.D.S.Nath ICA
+Mrs.V.R.Tank ICA
+Mrs.V.R.Tank ICA(L)
+Dr.D.S.Nath ICA(L)
+Dr.T.S.Chaware ICA(L)
+Dr.P.P.Gundewar ICA(L)
+Dr.S.B.Somani COS
+Mrs.P.S.Mahajani COS
+Mrs.A.R.Ashkhedkar COS
+Mr.V.S.Jadhav COS
+Mr.V.S.Jadhav COS(L)
+Mrs.A.R.Ashkhedkar COS(L)
+Mrs.P.S.Mahajani COS(L)
+Dr.S.B.Somani COS(L)
+Dr.S.N.Jadhav MA
+Dr.M.R.Kowdiki MA
+Dr.A.A.Naik MA
+Dr.P.M.Jadhav MA
+Dr.P.M.Jadhav MA(L)
+Dr.A.A.Naik MA(L)
+Dr.M.R.Kowdiki MA(L)
+Dr.S.N.Jadhav MA(L)
+Dr.A.M.Purohit PCM
+Dr.S.R.Yeolakar PCM
+Dr.S.R.Yeolakar PCM(L)
+Dr.A.M.Purohit PCM(L)
+Mrs.S.S.Paithankar PCM(L)
+Dr.V.V.Deshmukh JAVA
+Dr.V.V.Deshmukh JAVA(L)
+Dr.A.S.Barhatte JAVA(L)
+Dr.N.M.Pradhan JAVA(L)
+Dr.N.M.Pradhan OOPS
+Dr.M.N.Annadate OOPS
+Dr.A.S.Barhatte OOPS(L)
+Dr.M.N.Annadate OOPS(L)
+Dr.N.M.Pradhan OOPS(L)
+Mr.G.G.Narkhede DS
+Mr.G.G.Narkhede DS(L)
+Dr.U.S.Rawandale SA(L)
+Dr.S.Y.Kukade SA(L)
+Dr.T.S.Chaware SA(L)
+Dr.V.V.Gohokar SA(L)
+Dr.D.S.Nath SA(L)
+Dr.M.S.Kumawat SA(L)
+Prof.Rasika.Beohar SSMMSC
+Prof.Dayeeta.Roy SSMMSC
 end

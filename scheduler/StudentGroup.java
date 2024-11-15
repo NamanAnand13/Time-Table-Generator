@@ -6,16 +6,18 @@ import java.util.List;
 public class StudentGroup {
     private int id;
     private String name;
-    private List<String> subjects;    // List of subjects
-    private int noOfSubjects;         // Number of subjects
+    private List<String> subjects; // List of subjects
+    private int noOfSubjects; // Number of subjects
     private List<Integer> teacherIds; // List of teacher IDs assigned to the group
-    private List<Integer> hours;      // Hours allocated for each subject
+    private List<Integer> hours; // Hours allocated for each subject
+    private List<String> classrooms;
 
     // Constructor initializes the lists
     public StudentGroup() {
         subjects = new ArrayList<>();
         teacherIds = new ArrayList<>();
         hours = new ArrayList<>();
+        classrooms = new ArrayList<>();
     }
 
     // Getter and Setter for id
@@ -73,6 +75,14 @@ public class StudentGroup {
     // Add hours for a subject
     public void addHours(int hour) {
         this.hours.add(hour);
+    }
+
+    public void addClassroom(String classroom) {
+        this.classrooms.add(classroom);
+    }
+
+    public List<String> getClassrooms() {
+        return classrooms;
     }
 
     @Override
